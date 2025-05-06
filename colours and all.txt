@@ -1,0 +1,9 @@
+#2C2C2C >> Nav
+#93583F >> Highlight
+#252424 >> Footer
+
+
+To do later >>
+1. Responsive Nav
+2. Responsive Hero
+3. 
