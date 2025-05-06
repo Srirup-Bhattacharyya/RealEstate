@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --layoutpadding: 3.4%;
+  --layoutwidth: 93.3%;
+  --layoutmargin: 6%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+}
+.Outer-Wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+nav {
+  height: 10%;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: var(--layoutpadding);
+  padding-right: var(--layoutpadding);
+  position: fixed;
+}
+li {
+  background-color: blueviolet;
+  width: 100%;
+  height: 60%;
+  list-style-type: none;
+}
+.hero {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero section {
+  width: var(--layoutwidth);
+  height: 100%;
+  background-color: aquamarine;
+}
+.featureProperty {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featureProperty section:nth-child(1) {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(25, 128, 93);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.propertyOptions {
+  width: var(--layoutwidth);
+  height: 8%;
+  background-color: rgb(181, 192, 188);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.propertyContainer {
+  width: var(--layoutwidth);
+  height: 90%;
+  background-color: rgb(17, 68, 51);
+  display: flex;
+  justify-content: space-between;
+}
+.Prop {
+  width: 31%;
+  height: 100%;
+  background-color: blue;
+}
+.photo {
+  height: 45%;
+  width: 100%;
+  background-color: violet;
+}
+.info {
+  height: 45%;
+  width: 100%;
+  background-color: rgb(94, 22, 94);
+}
+.buttons {
+  height: 10%;
+  width: 100%;
+  background-color: rgb(201, 123, 201);
+}
+.investProperty {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.investPropertyHead {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(27, 153, 34);
+  margin-top: var(--layoutmargin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.investContainer {
+  width: var(--layoutwidth);
+  height: 80%;
+  background-color: rgb(66, 0, 189);
+}
+.invest:nth-child(1) {
+  width: 100%;
+  height: 50%;
+  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.invest:nth-child(2) {
+  width: 100%;
+  height: 50%;
+  background-color: chartreuse;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.photo1:nth-child(1) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(160, 16, 64);
+}
+.photo1:nth-child(2) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(46, 32, 58);
+}
+.photo1:nth-child(3) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(94, 43, 60);
+}
+.photo2:nth-child(1) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(160, 16, 64);
+}
+.photo2:nth-child(2) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(46, 32, 58);
+}
+.photo2:nth-child(3) {
+  height: 90%;
+  width: 30%;
+  background-color: rgb(94, 43, 60);
+}
+.availableProp {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.availablePropHead {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(209, 118, 168);
+  margin-top: var(--layoutmargin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.availablePropContainer {
+  width: var(--layoutwidth);
+  height: 90%;
+  background-color: rgb(18, 113, 221);
+  display: flex;
+  justify-content: space-between;
+}
+.property:nth-child(1) {
+  height: 100%;
+  width: 35%;
+  background-color: rgb(82, 31, 7);
+}
+.property:nth-child(2) {
+  height: 100%;
+  width: 64%;
+  background-color: rgb(69, 69, 139);
+}
+.text1 {
+  background-color: aquamarine;
+  height: 42.5%;
+  width: 100%;
+}
+.heading {
+  height: 15%;
+  width: 100%;
+  background-color: rgb(116, 51, 51);
+}
+.text2 {
+  background-color: rgb(6, 25, 43);
+  height: 42.5%;
+  width: 100%;
+}
+.contactUs {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactUsHeading {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(52, 16, 136);
+  margin-top: var(--layoutmargin);
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+.formContainer {
+  width: var(--layoutwidth);
+  height: 90%;
+  background-color: rgb(18, 113, 221);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact:nth-child(1) {
+  height: 80%;
+  width: 32%;
+  background-color: rgb(7, 7, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact:nth-child(2) {
+  height: 80%;
+  width: 32%;
+  background-color: rgb(41, 7, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact:nth-child(3) {
+  height: 80%;
+  width: 32%;
+  background-color: rgb(7, 55, 61);
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact:nth-child(1) span {
+  width: 100%;
+  height: 53%;
+  background-color: rgb(94, 62, 13);
+  display: block;
+}
+.contact:nth-child(2) span {
+  width: 100%;
+  height: 53%;
+  background-color: rgb(17, 142, 180);
+  display: block;
+}
+input {
+  height: 40%;
+  width: 100%;
+  border: solid rgba(0, 0, 0, 0.144) 1.5px;
+}
+.contact:nth-child(3) button {
+  background-color: greenyellow;
+  width: 100%;
+  height: 45%;
+  border: none;
+}
+.contact:nth-child(3) button:hover {
+  cursor: pointer;
+}
+.useArticles {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.useArticlesHead {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(20, 6, 51);
+  margin-top: var(--layoutmargin);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.useArticlesSubHead {
+  width: var(--layoutwidth);
+  height: 10%;
+  background-color: rgb(25, 128, 93);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.useArticlesContainer {
+  width: var(--layoutwidth);
+  height: 80%;
+  background-color: rgb(17, 68, 51);
+  display: flex;
+  justify-content: space-between;
+}
+.footer{
+  width: 100%;
+  height: 90%;
+  margin-top: var(--layoutmargin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-family: "Montserrat";
+}
+.footerhead{
+  background-color: rgb(10, 33, 46);
+  height: 30%;
+  width: var(--layoutwidth);
+  border-bottom: solid rgba(190, 15, 15, 0.384);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  background-color: aliceblue;
+  height: 90%;
+  width: 30%;
+}
+.footermid1{
+  background-color: rgb(18, 83, 121);
+  height: 20%;
+  width: var(--layoutwidth);
+  display: flex;
+  align-items: center;
+  justify-content:left;
+  border-bottom: solid rgba(190, 15, 15, 0.384);
+}
+.search{
+  height: 35%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+.search button{
+  height: 100%;
+  width: 20%;
+  background-color: black;
+  border: 0;
+}
+.search button:hover{
+  cursor: pointer;
+}
+i{
+  color: rgb(221, 165, 9);
+}
+input{
+  height: 100%;
+  background-color: black;
+  outline: none;
+}
+.phone{
+  height: 35%;
+  width: 20%;
+  background-color: rgb(4, 21, 37);
+  display: flex;
+  margin-right: 3%;
+}
+.part1{
+  background-color: rgb(9, 150, 79);
+  width: 100%;
+  height: 50%;
+}
+.part1{
+  background-color: rgb(25, 255, 144);
+  width: 100%;
+  height: 50%;
+}
+.contact2{
+  height: 35%;
+  width: 20%;
+  background-color: rgb(4, 21, 37);
+  display: flex;
+  flex-direction: column;
+}
+.footermid2{
+  background-color: rgb(58, 110, 139);
+  height: 45%;
+  width: var(--layoutwidth);
+  display: flex;
+  align-items: center;
+}
+.Navigation, .RealEstate, .Types, .Area{
+  height: 70%;
+  width: 20%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  justify-content: space-between;
+}
+.head{
+  height: 25%;
+  width: 100%;
+  background-color: rgb(42, 70, 133);
+  border: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+}
+ul{
+  height: 63%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+ul li{
+  width: 100%;
+  height: 13%;
+  background-color: aquamarine;
+}
+.search button:hover{
+  cursor: pointer;
+}
+i{
+  color: rgb(221, 165, 9);
+}
+input{
+  height: 100%;
+  background-color: black;
+  outline: none;
+}
+.part1{
+  background-color: rgb(9, 150, 79);
+  width: 100%;
+  height: 50%;
+}
+.part1{
+  background-color: rgb(25, 255, 144);
+  width: 100%;
+  height: 50%;
+}
+.footerdown{
+  background-color: rgb(86, 115, 133);
+  height: 5%;
+  width: var(--layoutwidth);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 70%;
+  font-weight: 900;
+}
