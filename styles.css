@@ -47,7 +47,7 @@ li {
   align-items: center;
 }
 .hero section {
-  width: var(--layoutwidth);
+  width: 100%;
   height: 100%;
   background-color: aquamarine;
 }
