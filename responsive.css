@@ -1,0 +1,21 @@
+@media screen and (min-width: 0px) and (max-width: 750px){
+    .propertyContainer {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    .Prop{
+        width: 100%
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1024px){
+    *{
+        box-sizing: border-box;
+    }
+    .propertyContainer {
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    .Prop{
+        width: 48%
+    }
+}

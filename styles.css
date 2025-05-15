@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 body {
   height: 100%;
@@ -52,6 +53,7 @@ li {
   background-color: aquamarine;
 }
 .featureProperty {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
@@ -79,31 +81,67 @@ li {
 .propertyContainer {
   width: var(--layoutwidth);
   height: 90%;
-  background-color: rgb(17, 68, 51);
+  /* background-color: rgb(17, 68, 51); */
   display: flex;
   justify-content: space-between;
 }
 .Prop {
   width: 31%;
-  height: 100%;
-  background-color: blue;
+  height: fit-content;
+  background-color: white;
 }
 .photo {
   height: 45%;
   width: 100%;
-  background-color: violet;
+}
+.photo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .info {
-  height: 45%;
+  height: fit-content;
   width: 100%;
-  background-color: rgb(94, 22, 94);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 1vh 2vw;
+  border: 1px solid slategray;
+}
+.info a{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.details p span{
+  font-weight: 700;
+}
+.details a{
+  text-transform: capitalize;
+  font-size: 1rem;
 }
 .buttons {
   height: 10%;
   width: 100%;
-  background-color: rgb(201, 123, 201);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  border: 1px solid slategray;
+}
+.buttons-group{
+  text-align: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
 }
 .investProperty {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
@@ -172,6 +210,7 @@ li {
   background-color: rgb(94, 43, 60);
 }
 .availableProp {
+  position: relative;
   height: 80%;
   width: 100%;
   display: flex;
