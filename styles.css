@@ -110,9 +110,26 @@ li {
 }
 .info a{
   font-size: 1.2rem;
-  text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
+  color: black;
+}
+.loc0{
+    text-transform: uppercase;
+}
+.loc{
+  text-transform: capitalize ;
+  color: var(--color2) !important;
+}
+.loc1:hover{
+  text-transform: none !important;
+  color: var(--color2);
+}
+.icon{
+    margin-right: 10px;
+}
+a:hover{
+  text-decoration: underline;
 }
 .details{
   display: flex;
