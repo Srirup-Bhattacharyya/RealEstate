@@ -33,6 +33,7 @@ nav {
   padding-left: var(--layoutpadding);
   padding-right: var(--layoutpadding);
   position: fixed;
+  z-index: 999;
 }
 li {
   background-color: blueviolet;
@@ -41,16 +42,55 @@ li {
   list-style-type: none;
 }
 .hero {
+  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.hero section {
+.hero .imageTextContainer {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  background-color: black;
+  opacity: 0.1;
+}
+.scrollButton{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.imageTextContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imageTextContainer .text {
+  position: absolute;
+  width: 60%;
+  text-align: center;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+.imageTextContainer .text h1{
+  font-size: 2rem;
+  margin-bottom: 2vw;
+}
+.imageTextContainer .text p{
+  font-size: 1.5rem;
+  margin-bottom: 2vw;
 }
 .featureProperty {
   position: relative;
@@ -60,10 +100,9 @@ li {
   flex-direction: column;
   align-items: center;
 }
-.featureProperty section:nth-child(1) {
+.featureProperty .header {
   width: var(--layoutwidth);
   height: 10%;
-  background-color: rgb(25, 128, 93);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,18 +111,39 @@ li {
 .propertyOptions {
   width: var(--layoutwidth);
   height: 8%;
-  background-color: rgb(181, 192, 188);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+.propertyOptions h1{
+  font-weight: 500;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.propertyOptions h1:hover{
+  color: var(--color2);
+  border-bottom: 2px solid var(--color2);
+}
+.propertyOptions .active{
+  color: var(--color2);
+  border-bottom: 2px solid var(--color2);
+}
+.propertyContainer{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.propertyContainer {
+.propertyContent {
   width: var(--layoutwidth);
   height: 90%;
   /* background-color: rgb(17, 68, 51); */
   display: flex;
   justify-content: space-between;
+}
+.tabActive{
+  display: flex;
 }
 .Prop {
   width: 31%;
