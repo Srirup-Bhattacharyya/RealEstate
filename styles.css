@@ -167,6 +167,7 @@ li {
   gap: 2vh;
   padding: 1vh 2vw;
   border: 1px solid slategray;
+  border-top: none;
 }
 .info a{
   font-size: 1.2rem;
@@ -196,8 +197,27 @@ a:hover{
   flex-direction: column;
   gap: 2vh;
 }
+p{
+  display: flex;
+  align-items: center;
+}
 .details p span{
   font-weight: 700;
+  padding-left: 1vh;
+}
+.icon0{
+  padding-left: 2vh;
+}
+.loc2{
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+.loc2:hover{
+  cursor: pointer;
+  color: var(--color2);
+}
+h3{
+  font-size: x-large;
 }
 .details a{
   text-transform: capitalize;
@@ -216,6 +236,13 @@ a:hover{
   text-align: center;
   font-size: 0.7rem;
   text-transform: uppercase;
+}
+.buttons-group img{
+  margin-bottom: 2px;
+}
+.buttons p:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }
 .investProperty {
   position: relative;
