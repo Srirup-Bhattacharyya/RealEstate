@@ -131,6 +131,8 @@ li {
   border-bottom: 2px solid var(--color2);
 }
 .propertyContainer{
+  height: fit-content;
+  width: var(--layoutwidth);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +141,6 @@ li {
 .propertyContent {
   width: var(--layoutwidth);
   height: 90%;
-  /* background-color: rgb(17, 68, 51); */
   display: flex;
   justify-content: space-between;
 }
