@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --layoutpadding: 3.4%;
-  --layoutwidth: 93.3%;
+  --layoutwidth: 96.5%;
   --layoutmargin: 6%;
   --color1: #2C2C2C;
   --color2: #93583F;
@@ -134,6 +134,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: var(--layoutwidth);
 }
 .propertyContent {
   width: var(--layoutwidth);
@@ -170,7 +171,7 @@ li {
   border-top: none;
 }
 .info a{
-  font-size: 1.2rem;
+  font-size: 16px;
   text-decoration: none;
   font-weight: 600;
   color: black;
@@ -221,7 +222,7 @@ h3{
 }
 .details a{
   text-transform: capitalize;
-  font-size: 1rem;
+  font-size: 1p;
 }
 .buttons {
   height: 10%;
@@ -243,6 +244,27 @@ h3{
 .buttons p:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+/* For villas and apartments of FeatureProperty */
+.info1{
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 1vh 2vw;
+  border: 1px solid slategray;
+  border-top: none;
+}
+.info1 a{
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.Price{
+  font-size: x-large;
+  font-weight: 700;
 }
 .investProperty {
   position: relative;
