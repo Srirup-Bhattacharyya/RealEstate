@@ -2,10 +2,11 @@
 :root {
   --layoutpadding: 3.4%;
   --layoutwidth: 96.5%;
-  --layoutmargin: 6%;
+  --layoutmargin: 1.5%;
   --color1: #2C2C2C;
   --color2: #93583F;
   --color3: #252424;
+  --color4: #D3A188;
 }
 * {
   margin: 0;
@@ -34,12 +35,53 @@ nav {
   padding-right: var(--layoutpadding);
   position: fixed;
   z-index: 999;
+  gap: 60px;
 }
 li {
-  background-color: blueviolet;
-  width: 100%;
+  color: white;
+  width: fit-content;
   height: 60%;
   list-style-type: none;
+}
+.quicklinks{
+  display: flex;
+  gap: 40px;
+}
+.logo img{
+  height:40px;
+}
+.href{
+  text-decoration: none;
+  color: white;
+}
+.href:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color2);
+  transition: all 0.2s;
+}
+/* contacts of navbar */
+.Whatsapp{
+  color: var(--color4);
+  font-size: larger;
+}
+.phone{
+  background-color: var(--color1) !important;
+  width: 150px !important;
+}
+#telephone{
+  color: var(--color4);
+}
+.number{
+  margin-left: 5px;
+  color: white ;
+}
+.navcontacts{
+  display: flex;
+  align-items: center;
+  background-color: var(--color1);
+  color: var(--color2);
+  gap: 15px;
 }
 .hero {
   position: relative;
@@ -107,6 +149,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: var(--layoutmargin);
 }
 .propertyOptions {
   width: var(--layoutwidth);
