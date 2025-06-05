@@ -18,8 +18,6 @@ items.forEach((element, place) => {
             item.classList.remove('active');
         });
 
-        element.classList.add('active');
-
         propertyContent.forEach((content, index) => {
             if (place === index) {
                 content.style.display = 'flex';
