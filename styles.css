@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --layoutpadding: 3.4%;
   --layoutwidth: 96.5%;
   --layoutmargin: 1.5%;
-  --color1: #2C2C2C;
-  --color2: #93583F;
+  --color1: #2c2c2c;
+  --color2: #93583f;
   --color3: #252424;
-  --color4: #D3A188;
+  --color4: #d3a188;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 body {
   height: 100%;
@@ -43,40 +43,40 @@ li {
   height: 60%;
   list-style-type: none;
 }
-.quicklinks{
+.quicklinks {
   display: flex;
   gap: 40px;
 }
-.logo img{
-  height:40px;
+.logo img {
+  height: 40px;
 }
-.href{
+.href {
   text-decoration: none;
   color: white;
 }
-.href:hover{
+.href:hover {
   text-decoration: none;
   cursor: pointer;
   color: var(--color2);
   transition: all 0.2s;
 }
 /* contacts of navbar */
-.Whatsapp{
+.Whatsapp {
   color: var(--color4);
   font-size: larger;
 }
-.phone{
+.phone {
   background-color: var(--color1) !important;
   width: 150px !important;
 }
-#telephone{
+#telephone {
   color: var(--color4);
 }
-.number{
+.number {
   margin-left: 5px;
-  color: white ;
+  color: white;
 }
-.navcontacts{
+.navcontacts {
   display: flex;
   align-items: center;
   background-color: var(--color1);
@@ -91,49 +91,86 @@ li {
   flex-direction: column;
   align-items: center;
 }
-.hero .imageTextContainer {
+.hero .carouselContainer {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
-.overlay{
+.overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: 99;
   background-color: black;
-  opacity: 0.1;
+  opacity: 0.2;
 }
-.scrollButton{
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-}
-.imageTextContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.imageTextContainer .text {
+.carousel .text {
   position: absolute;
-  width: 60%;
-  text-align: center;
+  width: 100%;
   color: white;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 99;
 }
-.imageTextContainer .text h1{
+.carousel .text h1 {
   font-size: 2rem;
   margin-bottom: 2vw;
 }
-.imageTextContainer .text p{
+.carousel .text p {
   font-size: 1.5rem;
   margin-bottom: 2vw;
 }
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%; /* width will auto-expand to fit slides */
+}
+.carousel {
+  flex: 0 0 100%; /* Each slide takes 100% of container width */
+  height: 100%;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.controler {
+  position: absolute;
+  height: 4vh;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.bars {
+  position: relative;
+  height: 1vh;
+  width: 5vw;
+  background-color: rgba(240, 248, 255, 0.189);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 100;
+}
+/* .bars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: white;
+} */
+
 .featureProperty {
   position: relative;
   height: 100%;
@@ -159,21 +196,21 @@ li {
   align-items: center;
   gap: 4vw;
 }
-.propertyOptions h1{
+.propertyOptions h1 {
   font-weight: 500;
   padding: 0.5rem 0;
   cursor: pointer;
   transition: all 0.2s;
 }
-.propertyOptions h1:hover{
+.propertyOptions h1:hover {
   color: var(--color2);
   border-bottom: 2px solid var(--color2);
 }
-.propertyOptions .active{
+.propertyOptions .active {
   color: var(--color2);
   border-bottom: 2px solid var(--color2);
 }
-.propertyContainer{
+.propertyContainer {
   height: fit-content;
   width: var(--layoutwidth);
   display: flex;
@@ -187,7 +224,7 @@ li {
   display: flex;
   justify-content: space-between;
 }
-.tabActive{
+.tabActive {
   display: flex;
 }
 .Prop {
@@ -199,7 +236,7 @@ li {
   height: 45%;
   width: 100%;
 }
-.photo img{
+.photo img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -214,57 +251,57 @@ li {
   border: 1px solid slategray;
   border-top: none;
 }
-.info a{
+.info a {
   font-size: 16px;
   text-decoration: none;
   font-weight: 600;
   color: black;
 }
-.loc0{
-    text-transform: uppercase;
+.loc0 {
+  text-transform: uppercase;
 }
-.loc{
-  text-transform: capitalize ;
+.loc {
+  text-transform: capitalize;
   color: var(--color2) !important;
 }
-.loc1:hover{
+.loc1:hover {
   text-transform: none !important;
   color: var(--color2);
 }
-.icon{
-    margin-right: 10px;
+.icon {
+  margin-right: 10px;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
-.details{
+.details {
   display: flex;
   flex-direction: column;
   gap: 2vh;
 }
-p{
+p {
   display: flex;
   align-items: center;
 }
-.details p span{
+.details p span {
   font-weight: 700;
   padding-left: 1vh;
 }
-.icon0{
+.icon0 {
   padding-left: 2vh;
 }
-.loc2{
+.loc2 {
   font-weight: 500 !important;
   text-decoration: none !important;
 }
-.loc2:hover{
+.loc2:hover {
   cursor: pointer;
   color: var(--color2);
 }
-h3{
+h3 {
   font-size: x-large;
 }
-.details a{
+.details a {
   text-transform: capitalize;
   font-size: 1p;
 }
@@ -277,20 +314,20 @@ h3{
   padding: 1vh 2vw;
   border: 1px solid slategray;
 }
-.buttons-group{
+.buttons-group {
   text-align: center;
   font-size: 0.7rem;
   text-transform: uppercase;
 }
-.buttons-group img{
+.buttons-group img {
   margin-bottom: 2px;
 }
-.buttons p:hover{
+.buttons p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 /* For villas and apartments of FeatureProperty */
-.info1{
+.info1 {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -300,13 +337,13 @@ h3{
   border: 1px solid slategray;
   border-top: none;
 }
-.info1 a{
+.info1 a {
   font-size: 15px;
   text-decoration: none;
   font-weight: 600;
   color: black;
 }
-.Price{
+.Price {
   font-size: x-large;
   font-weight: 700;
 }
@@ -534,7 +571,7 @@ input {
   display: flex;
   justify-content: space-between;
 }
-.footer{
+.footer {
   width: 100%;
   height: 90%;
   margin-top: var(--layoutmargin);
@@ -546,7 +583,7 @@ input {
   justify-self: center;
   font-family: "Montserrat";
 }
-.footerhead{
+.footerhead {
   background-color: rgb(10, 33, 46);
   height: 30%;
   width: var(--layoutwidth);
@@ -555,21 +592,21 @@ input {
   align-items: center;
   justify-content: center;
 }
-.img{
+.img {
   background-color: aliceblue;
   height: 90%;
   width: 30%;
 }
-.footermid1{
+.footermid1 {
   background-color: rgb(18, 83, 121);
   height: 20%;
   width: var(--layoutwidth);
   display: flex;
   align-items: center;
-  justify-content:left;
+  justify-content: left;
   border-bottom: solid rgba(190, 15, 15, 0.384);
 }
-.search{
+.search {
   height: 35%;
   width: 20%;
   background-color: black;
@@ -577,55 +614,58 @@ input {
   align-items: center;
   margin-right: 3%;
 }
-.search button{
+.search button {
   height: 100%;
   width: 20%;
   background-color: black;
   border: 0;
 }
-.search button:hover{
+.search button:hover {
   cursor: pointer;
 }
-i{
+i {
   color: rgb(221, 165, 9);
 }
-input{
+input {
   height: 100%;
   background-color: black;
   outline: none;
 }
-.phone{
+.phone {
   height: 35%;
   width: 20%;
   background-color: rgb(4, 21, 37);
   display: flex;
   margin-right: 3%;
 }
-.part1{
+.part1 {
   background-color: rgb(9, 150, 79);
   width: 100%;
   height: 50%;
 }
-.part1{
+.part1 {
   background-color: rgb(25, 255, 144);
   width: 100%;
   height: 50%;
 }
-.contact2{
+.contact2 {
   height: 35%;
   width: 20%;
   background-color: rgb(4, 21, 37);
   display: flex;
   flex-direction: column;
 }
-.footermid2{
+.footermid2 {
   background-color: rgb(58, 110, 139);
   height: 45%;
   width: var(--layoutwidth);
   display: flex;
   align-items: center;
 }
-.Navigation, .RealEstate, .Types, .Area{
+.Navigation,
+.RealEstate,
+.Types,
+.Area {
   height: 70%;
   width: 20%;
   background-color: black;
@@ -634,7 +674,7 @@ input{
   margin-right: 3%;
   justify-content: space-between;
 }
-.head{
+.head {
   height: 25%;
   width: 100%;
   background-color: rgb(42, 70, 133);
@@ -644,40 +684,40 @@ input{
   color: white;
   font-weight: 800;
 }
-ul{
+ul {
   height: 63%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-ul li{
+ul li {
   width: 100%;
   height: 13%;
   background-color: aquamarine;
 }
-.search button:hover{
+.search button:hover {
   cursor: pointer;
 }
-i{
+i {
   color: rgb(221, 165, 9);
 }
-input{
+input {
   height: 100%;
   background-color: black;
   outline: none;
 }
-.part1{
+.part1 {
   background-color: rgb(9, 150, 79);
   width: 100%;
   height: 50%;
 }
-.part1{
+.part1 {
   background-color: rgb(25, 255, 144);
   width: 100%;
   height: 50%;
 }
-.footerdown{
+.footerdown {
   background-color: rgb(86, 115, 133);
   height: 5%;
   width: var(--layoutwidth);
