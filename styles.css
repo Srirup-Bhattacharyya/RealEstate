@@ -7,6 +7,7 @@
   --color2: #93583f;
   --color3: #252424;
   --color4: #d3a188;
+  --color5: #B88776;
 }
 * {
   margin: 0;
@@ -232,14 +233,58 @@ li {
   height: fit-content;
   background-color: white;
 }
-.photo {
+.carousel1 {
   height: 45%;
   width: 100%;
+  flex: 0 0 100%; /* Each slide takes 100% of container width */
+  height: 100%;
 }
-.photo img {
+.carousel1 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
+}
+.carouselContainer1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.carousel-track1 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  width: 100%; /* width will auto-expand to fit slides */
+}
+.sidebuttons {
+  position: absolute;
+  height: 4vh;
+  width: 90%;
+  left: 5%;
+  bottom: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2vw;
+}
+.arrow{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+  width: 3vw;
+  opacity: 0.5;
+  background-color: rgba(55, 64, 71, 0.334);
+  border: solid white 1px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 100;
+}
+.arrow:hover {
+  opacity: 1;
+  border: none;
+  background-color: var(--color5);
 }
 .info {
   height: fit-content;

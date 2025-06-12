@@ -11,6 +11,18 @@ controller.forEach((bar, index) => {
     });
 });
 
+// Body image buttons
+let sliders1 = document.querySelectorAll('.carousel1');
+let controller1 = document.querySelectorAll('.arrow');
+let track1 = document.querySelector('.carousel-track1');
+// Manually control
+controller1.forEach((arrow, index) => {
+    arrow.addEventListener('click', () => {
+        let slideWidth = sliders1[0].clientWidth;
+        // bar.style.backgroundColor = "white";
+        track1.style.transform = `translateX(-${index * slideWidth}px)`;
+    });
+});
 // Tab menu
 let menu = document.querySelector(".propertyOptions");
 let items = menu.querySelectorAll(".item");
